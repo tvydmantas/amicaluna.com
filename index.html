@@ -7,7 +7,11 @@
   <meta name="description" content="Is your Spanish Water Dog's coat being damaged by wrong grooming? Learn the exact techniques to protect, cord, and care for your SWD's unique coat. Step-by-step guide for first-time owners.">
   <title>The Ultimate Spanish Water Dog Grooming Guide | Coat Maintenance</title>
   <!-- Preload hero image — LCP element -->
-  <link rel="preload" as="image" href="LunaPencil.webp" imagesrcset="LunaPencil.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" 
+      href="LunaPencil.webp" 
+      imagesrcset="LunaPencil-mobile.webp 480w, LunaPencil.webp 780w"
+      imagesizes="(max-width: 600px) 480px, 780px"
+      type="image/webp" fetchpriority="high">
   <style>
     /* Self-hosted fonts — no third-party requests */
     @font-face {
@@ -56,6 +60,8 @@
   <!-- Preload critical fonts (above-the-fold text) -->
   <link rel="preload" as="font" type="font/woff2" href="fonts/lato-v25-latin-700.woff2" crossorigin>
   <link rel="preload" as="font" type="font/woff2" href="fonts/playfair-display-v40-latin-600.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="fonts/lato-v25-latin-regular.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="fonts/playfair-display-v40-latin-italic.woff2" crossorigin>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -391,7 +397,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="hero">
     <picture>
-      <source srcset="LunaPencil.webp" type="image/webp">
+      <source 
+        srcset="LunaPencil-mobile.webp 480w, LunaPencil.webp 780w"
+        sizes="(max-width: 600px) 480px, 780px"
+        type="image/webp">
       <img src="LunaPencil.png"
            alt="Spanish Water Dog with natural corded coat — illustrative pencil drawing"
            class="hero-bg"
